@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, red, blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+}
+
+.background {
+    height: 150vh;
+    width: 120vh;
+    background: white;
+    display: block;
+    text-align: center;
+    border-radius: 3%;
+    max-height: 50vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.heading {
+    font-family: 'Rubik Burned', system-ui;
+    font-size: 4rem;
+    color: rgb(23, 59, 148)
+}
+
+.addlist {
+    position: relative;
+    width: 250px;
+
+}
+
+.addlist input {
+    width: 70%;
+    padding: 5px;
+    color: black;
+    background: transparent;
+    font-size: 1em;
+    outline: none;
+    border: 1px solid blueviolet;
+}
+
+.addlist span {
+    position: absolute;
+    left: 0;
+    padding: 8px;
+    pointer-events: none;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.addlist input:valid~span,
+.addlist input:focus~span {
+    color: blueviolet;
+    transform: translateX(10px) translateY(-7px);
+    padding: 0 10px;
+    font-size: 0.65em;
+    background: white;
+    border-left: 1px solid blueviolet;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    color: white;
+    background: blueviolet;
+    border-radius: 10px;
+}
+
+ul {
+
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+
+}
+
+ul li {
+    width: 70%;
+    padding: 10px 20px;
+    list-style: none;
+    font-size: 2em;
+    background: orangered;
+    color: wheat;
+    margin: 5px 0;
+    border-radius: 15px;
+    border: 5px solid orange;
+    overflow: auto;
+}
+
+.delete-btn {
+    position: relative;
+    width: min-content;
+    font-size: 0.65em;
+    border: none;
+    padding: 20px 38px;
+    border-radius: 15px;
+    background: red;
+    color: white;
+    left: 11em;
+
+
+}
+
+.scroll {
+    height: 200px;
+    overflow-y: auto;
+}

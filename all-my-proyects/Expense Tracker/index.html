@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="backg">
+      <div class="bground">
+        <div class="title">
+          <h2 class="title-topic">Expense Tracker</h2>
+        </div>
+
+        <section class="input-tracker">
+          <div class="transaction">
+            <label class="c">
+              <input type="text" class="category" id="cat" />
+            </label>
+
+            <label class="num-category">
+              <input type="number" class="numberIn" id="numIn" />
+            </label>
+
+            <div class="menu">
+              <select name="typeofbudget" class="selector" id="in-or-ex">
+                <option>Choose your budget</option>
+                <option value="account">Account</option>
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+              </select>
+            </div>
+
+            <label class="d">
+              <input type="date" class="date-category" id="d" />
+            </label>
+
+            <label class="b">
+              <button class="btn" id="myButton">Click</button>
+            </label>
+          </div>
+        </section>
+
+        <section class="total">
+          <span class="span">$</span>
+          <span class="number" id="n">0</span>
+        </section>
+
+        <section class="show-category">
+          <ul class="ul-list" id="myList"></ul>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
