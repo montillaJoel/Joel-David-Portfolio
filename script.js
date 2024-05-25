@@ -47,6 +47,12 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+document.addEventListener('keydown', function(){
+  if (e.key === "Enter"){
+      window.scrollTo(0, document.querySelector(".lang").scrollHeight);
+  }
+}
+
 scroller.addEventListener("click", function () {
   window.scrollTo(0, document.querySelector(".lang").scrollHeight);
 });
